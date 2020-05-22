@@ -10,6 +10,6 @@ module('Unit | Model | grandparent', function(hooks) {
     let grandparent = make('grandparent', {
       parent: make('parent'),
     });
-    assert.equal(grandparent.parent.children.firstObject.name, 'Pat');
+    assert.equal(grandparent.parent.children.firstObject.name, 'Pat', 'Name is Pat');
   });
 });
